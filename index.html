@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECF Vidéotèque</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="./assets/js/app.js"></script>
 </head>
 <body>
+    <header>
+        <img src="./assets/img/logo ECF.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Vidéothèque</a></li>
+                <li><a href="">Recherche Films</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- TODO -->
+    <main>
+        <section class="container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Titre</a>
+                  <a class="dropdown-item" href="#">année</a>
+
+              </div>
+
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titre</th>
+                    <th scope="col">Année</th>
+                    <th scope="col">Auteur</th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button type="button" class="btn btn-success">Ajouter</button>
     
+        </section>
+    </main>
 </body>
 </html>

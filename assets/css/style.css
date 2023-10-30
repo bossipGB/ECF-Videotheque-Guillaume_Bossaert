@@ -1,1 +1,48 @@
-/* TODO */
+header img{
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+nav{
+    background-color: #5296E5;
+    padding: 20px;
+    min-width: 100%;
+}
+
+ul, li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    border: 1px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #00D1FF;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+main{
+    background-image: url(../img/background\ ECF.png);
+    height: 100vh;
+}
+
+.container{
+    background-color:  #2d5f9c;
+    border-radius: 25px;
+    opacity: 0.9;
+    width: 70%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#dropdownMenuButton{
+    margin-bottom: 15px;
+}
