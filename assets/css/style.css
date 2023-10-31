@@ -6,6 +6,11 @@ body{
 main{
     display: flex;
     align-items: center;
+    background-image: url(../img/background\ ECF.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 85vh;
 }
 
 header img{
@@ -40,9 +45,12 @@ nav li a{
     color: black;
 }
 
-main{
-    background-image: url(../img/background\ ECF.png);
-    height: 100vh;
+#filtre{
+    background-color: #00D1FF;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    width: 175px;
 }
 
 .container{
