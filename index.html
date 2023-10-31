@@ -6,7 +6,9 @@
     <title>ECF Vidéotèque</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/bootstrap-5.3.2-dist/css/bootstrap.css">
-    <script src="./assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,53 +23,38 @@
     
     <main>
         <section class="container">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Titre</a>
-                  <a class="dropdown-item" href="#">année</a>
+          <div>
+            <label for="filter">Filtrer par :</label>
+            <select id="filter">
+              <option value="title">Titre</option>
+              <option value="year">Année</option>
+            </select>
+          </div>
+        </div>
 
-              </div>
-
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Titre</th>
-                    <th scope="col">Année</th>
-                    <th scope="col">Auteur</th>
-                    <td></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td><button type="button" class="btn btn-danger">Supprimer</button></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <button type="button" class="btn btn-success">Ajouter</button>
-    
+        <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">Titre</th>
+                  <th scope="col">Année</th>
+                  <th scope="col">Auteur</th>
+                  <td></td>
+              </tr>
+          </thead>
+          <tbody>
+              
+          </tbody>
+      </table>
+      
+      <button type="button" class="btn btn-success" id="addFilmBtn">Ajouter</button>
+        <form id="addFilmForm" style="display: none;">
+          <input type="text" id="title" placeholder="Titre">
+          <input type="number" id="year" placeholder="Année">
+          <input type="text" id="author" placeholder="Auteur">
+          <button type="button" class="btn btn-primary" id="saveFilmBtn">Sauvegarder</button>
+        </form>
+      
+              
         </section>
     </main>
 </body>
