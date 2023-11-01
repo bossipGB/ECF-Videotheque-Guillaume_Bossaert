@@ -58,9 +58,46 @@ nav li a{
     border-radius: 25px;
     opacity: 0.9;
     width: 70%;
-    padding: 30px;    
+    padding: 30px;   
+    max-height: 75vh;
+    overflow: auto;
 }
 
 #dropdownMenuButton{
     margin-bottom: 15px;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+#titre{
+    background-color: #00D1FF;
+    padding: 10px;
+    border-radius: 25px;
+    width: 380px;
+}
+
+
+.card {
+    flex: 1;
+    margin: 10px; 
+    height: 100%;
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
 }
