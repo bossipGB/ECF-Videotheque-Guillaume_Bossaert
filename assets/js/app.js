@@ -139,3 +139,46 @@ filterSelect.addEventListener('change', function () {
 
 
 displayFilms();
+
+
+
+
+const choreographer = new Choreographer({
+    animations: [
+        {
+            range: [-1, window.innerWidth],
+            selector: '#choreographer',
+            type: 'change',
+            style: 'color',
+            to: getRandomColor(),
+        },
+    ],
+  });
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+let isChangingColor = false; 
+
+window.addEventListener('mousemove', (e) => {
+    if (!isChangingColor) {
+        isChangingColor = true;
+        choreographer.runAnimationsAt(e.clientX);
+        setTimeout(() => {
+            choreographer.updateAnimations([{
+                range: [-1, window.innerWidth],
+                selector: '#choreographer',
+                type: 'change',
+                style: 'color',
+                to: getRandomColor(),
+            }]);
+            isChangingColor = false;
+        }, 1000); 
+    }
+});
