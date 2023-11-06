@@ -75,7 +75,6 @@ $(document).ready(function () {
     }
 });
 
-
 const choreographer = new Choreographer({
     animations: [
         {

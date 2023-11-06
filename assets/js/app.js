@@ -33,16 +33,12 @@ function displayFilms() {
 function addFilmToTable(film, index) {
     var tableBody = document.querySelector('table tbody');
     var row = tableBody.insertRow(index);
-
     var titleCell = row.insertCell(0);
     titleCell.textContent = film.title;
-
     var yearCell = row.insertCell(1);
     yearCell.textContent = film.years;
-
     var authorCell = row.insertCell(2);
     authorCell.textContent = film.authors;
-
     var deleteCell = row.insertCell(3);
     var deleteButton = document.createElement('button');
     deleteButton.textContent = 'Supprimer';
@@ -137,11 +133,7 @@ filterSelect.addEventListener('change', function () {
     displayFilms(); 
 });
 
-
 displayFilms();
-
-
-
 
 const choreographer = new Choreographer({
     animations: [
